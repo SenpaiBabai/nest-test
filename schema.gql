@@ -1,0 +1,20 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Data {
+  id: ID!
+  name: String!
+  completed: Boolean!
+}
+
+type Query {
+  allTodos: [Data!]!
+  findTodo(id: String!): Data!
+}
+
+type Mutation {
+  createTodo(id: String!, name: String!, completed: Boolean): Data!
+  deleteTodo(id: String!): Data!
+  editTodo(id: String!, name: String!, completed: Boolean): Data!
+}
